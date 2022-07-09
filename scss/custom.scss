@@ -1,0 +1,76 @@
+:root {
+  --blue: #43aefc;
+}
+
+$blue: var(--blue);
+html {
+  height: 100%;
+}
+body {
+  background-color: $blue;
+  position: relative;
+}
+
+.app {
+  background-color: #fff;
+  max-width: 20rem;
+  margin: auto auto;
+  .heading {
+    border-bottom: 1px solid gray;
+    color: $blue;
+  }
+  .main {
+    h6 {
+      line-height: 0.2em;
+      margin: 10px 0 10px;
+      border-bottom: 1px solid grey;
+      color: grey;
+    }
+    button {
+      background-color: $blue;
+    }
+  }
+}
+
+.modal-c {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.modal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 20rem;
+
+  .heading {
+    font-size: 2rem !important;
+    color: $blue;
+    #close-modal {
+      cursor: pointer;
+    }
+  }
+  .main {
+    img {
+      width: 50%;
+    }
+  }
+
+  .footer {
+    i {
+      color: $blue;
+      font-size: 1.5rem;
+    }
+    .caption {
+      font-size: 0.75rem;
+    }
+  }
+}

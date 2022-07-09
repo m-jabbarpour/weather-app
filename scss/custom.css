@@ -1,0 +1,79 @@
+:root {
+  --blue: #43aefc;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--blue);
+  position: relative;
+}
+
+.app {
+  background-color: #fff;
+  max-width: 20rem;
+  margin: auto auto;
+}
+
+.app .heading {
+  border-bottom: 1px solid gray;
+  color: var(--blue);
+}
+
+.app .main h6 {
+  line-height: 0.2em;
+  margin: 10px 0 10px;
+  border-bottom: 1px solid grey;
+  color: grey;
+}
+
+.app .main button {
+  background-color: var(--blue);
+}
+
+.modal-c {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.modal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 20rem;
+}
+
+.modal-card .heading {
+  font-size: 2rem !important;
+  color: var(--blue);
+}
+
+.modal-card .heading #close-modal {
+  cursor: pointer;
+}
+
+.modal-card .main img {
+  width: 50%;
+}
+
+.modal-card .footer i {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+.modal-card .footer .caption {
+  font-size: 0.75rem;
+}
+/*# sourceMappingURL=custom.css.map */
