@@ -1,0 +1,19 @@
+{
+  "name": "Weather",
+  "short_name": "Weather",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#43aefc",
+  "theme_color": "#43aefc",
+  "description": "An app to see weather info based on your location or entered city",
+  "icons": [
+    {
+      "src": "assets/app-icons/icon-48.svg",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/app-icons/icon-192.svg",
+      "sizes": "192x192"
+    }
+  ]
+}

@@ -39,17 +39,15 @@ class Weather {
     this.country = data.sys.country;
     this.feelsLike = Math.round(data.main.feels_like);
     this.humidity = data.main.humidity;
- 
+
     this.showModal();
     input.value = "";
   }
 
   async getDataByLocation() {
     if (navigator.geolocation) {
-     
       navigator.geolocation.getCurrentPosition(
         async function (pos) {
-          
           const geoLat = pos.coords.latitude.toFixed(5);
           const geoLng = pos.coords.longitude.toFixed(5);
 
@@ -104,62 +102,62 @@ class Weather {
   getIcon() {
     switch (this.icon) {
       case "01d":
-        modalImage.src = "./assets/icons/day.svg";
+        modalImage.src = "./assets/weather-icons/day.svg";
         break;
       case "01n":
-        modalImage.src = "./assets/icons/night.svg";
+        modalImage.src = "./assets/weather-icons/night.svg";
         break;
       case "02d":
-        modalImage.src = "./assets/icons/cloudy-day-3.svg";
+        modalImage.src = "./assets/weather-icons/cloudy-day-3.svg";
         break;
       case "02n":
-        modalImage.src = "./assets/icons/cloudy-night-3.svg";
+        modalImage.src = "./assets/weather-icons/cloudy-night-3.svg";
         break;
       case "03d":
-        modalImage.src = "./assets/icons/cloudy.svg";
+        modalImage.src = "./assets/weather-icons/cloudy.svg";
         break;
       case "03n":
-        modalImage.src = "./assets/icons/cloudy.svg";
+        modalImage.src = "./assets/weather-icons/cloudy.svg";
         break;
       case "04d":
-        modalImage.src = "./assets/icons/cloudy.svg";
+        modalImage.src = "./assets/weather-icons/cloudy.svg";
         break;
       case "04n":
-        modalImage.src = "./assets/icons/cloudy.svg";
+        modalImage.src = "./assets/weather-icons/cloudy.svg";
         break;
       case "09d":
-        modalImage.src = "./assets/icons/rainy-6.svg";
+        modalImage.src = "./assets/weather-icons/rainy-6.svg";
         break;
       case "09n":
-        modalImage.src = "./assets/icons/rainy-6.svg";
+        modalImage.src = "./assets/weather-icons/rainy-6.svg";
         break;
       case "10d":
-        modalImage.src = "./assets/icons/rainy-3.svg";
+        modalImage.src = "./assets/weather-icons/rainy-3.svg";
         break;
       case "10n":
-        modalImage.src = "./assets/icons/rainy-6.svg";
+        modalImage.src = "./assets/weather-icons/rainy-6.svg";
         break;
       case "11d":
-        modalImage.src = "./assets/icons/thunder.svg";
+        modalImage.src = "./assets/weather-icons/thunder.svg";
         break;
       case "11n":
-        modalImage.src = "./assets/icons/thunder.svg";
+        modalImage.src = "./assets/weather-icons/thunder.svg";
         break;
       case "13d":
-        modalImage.src = "./assets/icons/snowy-3.svg";
+        modalImage.src = "./assets/weather-icons/snowy-3.svg";
         break;
       case "13n":
-        modalImage.src = "./assets/icons/snowy-6.svg";
+        modalImage.src = "./assets/weather-icons/snowy-6.svg";
         break;
       case "50d":
-        modalImage.src = "./assets/icons/mist.svg";
+        modalImage.src = "./assets/weather-icons/mist.svg";
         break;
       case "50n":
-        modalImage.src = "./assets/icons/mist.svg";
+        modalImage.src = "./assets/weather-icons/mist.svg";
         break;
 
       default:
-        modalImage.src = "./assets/icons/mist.svg";
+        modalImage.src = "./assets/weather-icons/mist.svg";
         break;
     }
   }
